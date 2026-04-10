@@ -1,6 +1,7 @@
 package day3;
 
-public class ErrorExitDemo {
+public class
+ErrorExitDemo {
     public static void main(String[] args) {
 
         int age = -5;
