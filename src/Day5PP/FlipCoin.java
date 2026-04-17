@@ -1,0 +1,25 @@
+package Day5PP;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class FlipCoin {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random random = new Random();
+
+        int n = sc.nextInt();
+        int heads = 0, tails = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (random.nextDouble() < 0.5) {
+                heads++;
+            } else {
+                tails++;
+            }
+        }
+
+        System.out.println("Heads %: " + (heads * 100.0 / n));
+        System.out.println("Tails %: " + (tails * 100.0 / n));
+    }
+}
